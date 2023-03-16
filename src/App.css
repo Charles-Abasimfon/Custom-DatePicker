@@ -1,0 +1,144 @@
+.App {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+input,
+select,
+option {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.date-picker {
+  font-size: 14px;
+  position: relative;
+  width: 300px;
+}
+
+.date-picker-input {
+  display: flex;
+}
+
+.date-picker-input input[type='text'] {
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.date-picker-input button {
+  background-color: #1e40af;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+.date-picker-popup {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.date-picker-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f2f2f2;
+}
+
+.date-picker-popup-header button {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.date-picker-popup-header button:hover {
+  background-color: #e6e6e6;
+}
+
+.date-picker-popup-header select {
+  margin: 0 8px;
+  padding: 8px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.date-picker-popup-header div {
+  font-weight: bold;
+}
+
+.date-picker-popup-days {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.date-picker-popup-days div {
+  color: #1e40af;
+  text-align: center;
+  width: calc(100% / 7);
+}
+
+.date-picker-popup-dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px 10px;
+}
+
+.date-picker-popup-date {
+  align-items: center;
+  background-color: white;
+  border: 1px solid transparent;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin: 2px;
+  width: calc(100% / 7 - 4px);
+}
+
+.date-picker-popup-date:hover {
+  background-color: #ccc;
+}
+
+.date-picker-popup-date.other-month {
+  color: #999;
+  font-weight: normal;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.date-picker-popup-date.blackout-date {
+  color: #999;
+  font-weight: normal;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.invalid-date {
+  color: red;
+  line-height: 14px;
+  font-size: 14px;
+  height: 20px;
+}
