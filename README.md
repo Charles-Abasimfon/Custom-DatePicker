@@ -12,3 +12,7 @@ Before running the app, make sure you have installed all the dependencies by run
 Builds the app for production to the build folder.
 
 ### Demo Video
+
+
+https://user-images.githubusercontent.com/38044073/225705456-dbab5c2d-f414-457f-aa71-938f81529b72.mov
+
